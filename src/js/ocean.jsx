@@ -9,7 +9,7 @@ extend({ Water });
 export default function Ocean() {
   const ref = useRef();
   const gl = useThree((state) => state.gl);
-  const waterNormals = useTexture("../src/textures/water/waternormals.jpg");
+  const waterNormals = useTexture("src/textures/water/waternormals.jpg");
 //  const waterNormals = useLoader(THREE.TextureLoader, "src/textures/water/waternormals.jpg");
 
 //  console.log(ref?.current?.material);
