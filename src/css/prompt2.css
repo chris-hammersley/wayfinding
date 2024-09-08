@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: "Lay Grotesk";
+    font-weight: 300;
+    line-height: 1.25;
+  }
+  
+  .site {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(123, 131, 126, 0.9) 0%, rgba(54, 75, 73, 0.9) 100%), #364b49;
+    background-repeat: no-repeat;
+    color: #FFF;
+    min-height: 120vh; /* allows room for scrolling to see parallax */
+    height: 100%;
+  }
+  
+  .site__header,
+  .site__nav-list {
+    display: flex;
+  }
+  
+  .site__header {
+    height: 100%;
+    padding: 1.25rem 0;
+    position: fixed;
+    right: 1.25rem;
+    top: 0;
+    writing-mode: vertical-rl;
+  }
+  
+  .site__header > * {
+    flex: 1 1 auto;
+    padding-bottom: .625rem; /* to ensure the text beside it never touches */
+  }
+  
+  .site__nav {
+    padding-bottom: 0;
+  }
+  
+  .site__nav-list {
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  
+  .site__nav-link {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    padding-bottom: .625rem;
+  }
+  
+  /* remove extra padding on last child */
+  .site__nav-list li:last-child .site__nav-link {
+    padding-bottom: 0;
+  }
+  
+  /* utility class */
+  .block {
+    display: block;
+  }
+  
+  .main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 68rem; /* was 60rem; */
+  }
+  
+  .heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+
+  @media-query (min-width: 650px) {
+      position: absolute;
+      left: 0;
+      top: 6rem;
+    }
+}
+
+.container{
+  margin-top:20px;
+  width: 90% !important;
+}
+
+/* Polaroid Effect */
+
+.opacity75 {
+  opacity:0.75;
+}
+
+.opacity50 {
+  opacity:0.5;
+}
+
+.opacity35 {
+  opacity:0.35;
+}
+
+#polaroidcontainer { 
+  width:100%; 
+  margin-top:30px;    
+  z-index:20000;
+}
+
+.grid {
+  position: relative;
+  z-index: 1000;
+}
+
+.polaroid { 
+  float:inline-start; 
+  width:190px;
+  margin-bottom:-10px;
+} 
+
+.polaroid img { 
+  width:180px; 
+  margin:0 auto; 
+}
+
+figure {
+  display: inline-block;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity:1;
+}
+
+#zoomed-image {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+#zoomed-image .zoomed {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
