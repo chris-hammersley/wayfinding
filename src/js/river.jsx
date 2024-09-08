@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import img from "../../src/background/river/flow-final.png";
 
-import waterImg from "../../src/textures/water/water_texture.jpeg";
+import waterImg from "/assets/textures/water/water_texture.jpeg";
 import * as THREE from "three";
 
 const vertexShader = `

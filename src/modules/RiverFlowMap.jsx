@@ -59,7 +59,7 @@ const RiverFlowMap = () => {
               reflectivity: 0.07,
               flowMap: flowMapTexture,
               backgroundColor: 0x728295,
-              color: textureLoader.load('src/textures/water/water.jpg')
+              color: textureLoader.load('/assets/textures/water/water.jpg')
             }]}
             rotation={[-Math.PI / 2, 0, 0]}
             position={[0, 1.2, 0]}
