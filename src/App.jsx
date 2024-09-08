@@ -184,7 +184,7 @@ function Scene({ setIframeUrl, toggle, margin = 0.5}) {
       /* removed fog - check Keep */
       <ambientLight intensity={0.5} />
       <directionalLight position={[-5, 5, -5]} intensity={1.5} />
-      <Environment files="./assets/mossy_forest_4k.jpg" background />
+      <Environment files="./assets/mossy_forest_4k.hdr" background />
 
       /* Glow Effect code */
       <Effects disableGamma>
