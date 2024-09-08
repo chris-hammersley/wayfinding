@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+    <link type="text/css" rel="stylesheet" href="src/css/prompt2.css">
+    <link type="text/css" rel="stylesheet" href="src/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Wayfinding Prompt 2</title>
+    <script>
+      $(document).ready(function(){
+      $(".polaroid").each
+        (function ()
+          {
+          var tempVal = Math.round(Math.random());
+          if(tempVal == 1)
+              { var rotDegrees = randomXToY(330, 360); } // rotate left
+          else
+              { var rotDegrees = randomXToY(0, 30); } // rotate right
+  
+          var cssObj =
+          {
+          '-webkit-transform' : 'rotate('+ rotDegrees +'deg)',
+          '-moz-transform' : 'rotate('+ rotDegrees +'deg)',
+          'tranform' : 'rotate('+ rotDegrees +'deg)'
+          };
+          $(this).css(cssObj);
+          }
+        );
+      });
+  
+      // Function to get random number upto m
+      // http://roshanbh.com.np/2008/09/get-random-number-range-two-numbers-javascript.html
+      function randomXToY(minVal,maxVal,floatVal) {
+          var randVal = minVal+(Math.random()*(maxVal-minVal));
+          return typeof floatVal=='undefined'?Math.round(randVal):randVal.toFixed(floatVal);
+      };
+      </script>
+      
+  </head>
+
+  <body class="site">
+    <header class="site__header">
+        <nav class="site__nav">
+        <ul class="site__nav-list">
+          <li><a class="site__nav-link" href="/prompt1.html">Prompt 1</a></li>
+          <li><a class="site__nav-link"  href="/prompt3.html">Prompt 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <h1 class="logo">wayfinding</h1>
+      <div>Prompt 2 - Sharon's Response from Levee Park, Winona, MN - February 2023</div>
+      <div id="zoomed-image"></div>
+        <div class="container">
+          <div id="polaroidcontainer">
+            <div class='grid'>
+              <div class="polaroid opacity75"><figure><img class="img-zoomable" src="src/images/IMG_8042.JPG"></figure></div>
+
+              <div class="polaroid opacity35"><figure><img class="img-zoomable" src="src/images/IMG_8043.JPG"></figure></div>
+
+              <div class="polaroid"><figure><img class="img-zoomable" src="src/images/IMG_8044.JPG"></figure></div>
+
+              <div class="polaroid opacity50"><figure><img class="img-zoomable" src="src/images/IMG_8045.JPG"></figure></div>
+            
+              <div class="polaroid opacity50">
+                <figure>  <!-- 8046 -->
+                  <a href="https://player.vimeo.com/progressive_redirect/playback/1005648231/rendition/1080p/file.mp4?loc=external&signature=a9ddf668bd6a5ec3c32ce3fc0dcf273736f3884cef574b3519d993760c0c2252">
+                    <video preload="metadata" controlsList="nodownload" width="180px" class="img-zoomable">
+                      <source src="https://player.vimeo.com/progressive_redirect/playback/1005648231/rendition/1080p/file.mp4?loc=external&signature=a9ddf668bd6a5ec3c32ce3fc0dcf273736f3884cef574b3519d993760c0c2252#t=0.1" type="video/mp4">
+                    </video>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="polaroid opacity75"><figure><img class="img-zoomable" src="src/images/IMG_8047.JPG"></figure></div>
+
+              <div class="polaroid"><figure><img class="img-zoomable" src="src/images/IMG_8048.JPG"></figure></div>
+
+              <div class="polaroid"></a><img class="img-zoomable" src="src/images/IMG_8049.JPG"></figure></div>
+
+              <div class="polaroid opacity35"><figure><img class="img-zoomable" src="src/images/IMG_8050.JPG"></figure></div>
+
+              <div class="polaroid"> 
+                <figure>  <!-- 8051 -->
+                  <a href="https://player.vimeo.com/progressive_redirect/playback/1005648239/rendition/1080p/file.mp4?loc=external&signature=383371fc3d03bbbd2878098e437a3f6912a8728986b5378d22d68ebf093f59e7">
+                    <video preload="metadata" controlsList="nodownload" width="200px" class="img-zoomable">
+                      <source src="https://player.vimeo.com/progressive_redirect/playback/1005648239/rendition/1080p/file.mp4?loc=external&signature=383371fc3d03bbbd2878098e437a3f6912a8728986b5378d22d68ebf093f59e7#t=0.1" type="video/mp4">
+                    </video>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="polaroid opacity75"><figure><img class="img-zoomable" src="src/images/IMG_8052.JPG"></figure></div>
+
+              <div class="polaroid opacity50"><figure><img class="img-zoomable" src="src/images/IMG_8053.JPG"></figure></div>
+
+              <div class="polaroid"><figure><img class="img-zoomable" src="src/images/IMG_8054.JPG"></figure></div>
+
+              <div class="polaroid opacity75"><figure><img class="img-zoomable" src="src/images/IMG_8055.JPG"></figure></div>
+
+              <div class="polaroid opacity50">
+                <figure>  <!-- 8056 -->
+                  <a href="https://player.vimeo.com/progressive_redirect/playback/1005648251/rendition/1080p/file.mp4?loc=external&signature=d10f03bfff151ace4a1a147d8f0e9be9d93636b6ecbc08079b5bc3e869374e8b">
+                    <video preload="metadata" controlsList="nodownload" width="180px" class="img-zoomable"><source src="https://player.vimeo.com/progressive_redirect/playback/1005648251/rendition/1080p/file.mp4?loc=external&signature=d10f03bfff151ace4a1a147d8f0e9be9d93636b6ecbc08079b5bc3e869374e8b#t=0.1" type="video/mp4"></video>
+                  </a>
+                </figure>
+              </div>
+
+              <div class="polaroid"><figure><img class="img-zoomable" src="src/images/IMG_8057.JPG"></figure></div>
+
+              <div class="polaroid opacity50"><figure><img class="img-zoomable" src="src/images/IMG_8058.JPG"></figure></div>
+
+              <div class="polaroid"><figure><img class="img-zoomable" src="src/images/IMG_8059.JPG"></figure></div>
+
+              <div class="polaroid opacity35"><figure><img class="img-zoomable" src="src/images/IMG_8060.JPG"></figure></div>
+
+              <div class="polaroid opacity75"><figure><img class="img-zoomable" src="src/images/IMG_8067.JPG"></figure></div>
+
+              <div class="polaroid opacity50">
+                <figure>  <!-- 8073 -->
+                  <a href="https://player.vimeo.com/progressive_redirect/playback/1005648283/rendition/1080p/file.mp4?loc=external&signature=e3d13ec3bc0a5f0caa50d8ae355d7fbe0493321b5c4950f9cbf4cf2d19c7138a">
+                    <video preload="metadata" controlsList="nodownload" width="180px" class="img-zoomable">
+                      <source src="https://player.vimeo.com/progressive_redirect/playback/1005648283/rendition/1080p/file.mp4?loc=external&signature=e3d13ec3bc0a5f0caa50d8ae355d7fbe0493321b5c4950f9cbf4cf2d19c7138a#t=0.1" type="video/mp4">
+                    </video>
+                  </a>
+                </figure>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <script>
+      function updateGridZIndex(zIndex) {
+        var gridList = document.getElementsByClassName('grid');
+
+        for (var i = 0; i < gridList.length; i++) {
+          gridList[i].style.zIndex = zIndex
+        }
+      };
+    </script>
+    <script src="src/js/custom-zoom.js"></script>
+  </body>
+</html>

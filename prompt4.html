@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+    <link type="text/css" rel="stylesheet" href="src/css/prompt2.css">
+    <link type="text/css" rel="stylesheet" href="src/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Wayfinding Prompt 4</title>
+    <script>
+      $(document).ready(function(){
+      $(".polaroid").each
+        (function ()
+          {
+          var tempVal = Math.round(Math.random());
+          if(tempVal == 1)
+              { var rotDegrees = randomXToY(330, 360); } // rotate left
+          else
+              { var rotDegrees = randomXToY(0, 30); } // rotate right
+  
+          var cssObj =
+          {
+          '-webkit-transform' : 'rotate('+ rotDegrees +'deg)',
+          '-moz-transform' : 'rotate('+ rotDegrees +'deg)',
+          'tranform' : 'rotate('+ rotDegrees +'deg)'
+          };
+          $(this).css(cssObj);
+          }
+        );
+      });
+  
+      // Function to get random number upto m
+      function randomXToY(minVal,maxVal,floatVal) {
+          var randVal = minVal+(Math.random()*(maxVal-minVal));
+          return typeof floatVal=='undefined'?Math.round(randVal):randVal.toFixed(floatVal);
+      };
+      </script>
+      
+  </head>
+
+  <body class="site">
+    <header class="site__header">
+        <nav class="site__nav">
+        <ul class="site__nav-list">
+          <li><a class="site__nav-link" href="/prompt3.html">Prompt 3</a></li>
+          <li><a class="site__nav-link"  href="/prompt5.html">Prompt 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <h1 class="logo">wayfinding</h1>
+      <div>Prompt 4 - Sharon's Response from Lanesboro, MN - February & March 2023</div>
+      <div id="zoomed-image"></div>
+        <div class="container">
+          <div>
+            <video controls controlsList="nodownload" autoplay width="100%" src="https://player.vimeo.com/progressive_redirect/playback/808021775/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2d5af1c1335ef2650722fda08332181fa97d4e3e67ad358566e57f482cc1b01c"></video>
+          </div>
+
+          <div class="container">
+            <div class='grid'>
+
+              <div class="polaroid img-zoomable"><figure><img src="src/images/IMG_8345.jpg"></figure></div>
+
+              <div class="polaroid img-zoomable"><figure><img src="src/images/IMG_8346.jpg"></figure></div>
+
+              <div class="polaroid img-zoomable"></a><img src="src/images/IMG_8347.jpg"></figure></div>
+
+            </div>
+          </div>
+
+          <div class="container">
+            <div class='grid'>
+
+              <div class="polaroid img-zoomable"><figure><img src="src/images/IMG_8324.jpg"></figure></div>
+
+              <div class="polaroid img-zoomable"><figure><img src="src/images/IMG_8325.jpg"></figure></div>
+
+              <div class="polaroid img-zoomable"><figure><img src="src/images/IMG_8326.jpg"></figure></div>
+
+              <div class="polaroid img-zoomable"><figure><img src="src/images/IMG_8340.jpg"></figure></div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <script>
+      function updateGridZIndex(zIndex) {
+        var gridList = document.getElementsByClassName('grid');
+
+        for (var i = 0; i < gridList.length; i++) {
+          gridList[i].style.zIndex = zIndex
+        }
+      };
+    </script>
+    <script src="src/js/custom-zoom.js"></script>
+  </body>
+</html>
