@@ -36,7 +36,7 @@ export default function App() {
     <Canvas gl={{ preserveDrawingBuffer: true }}>
       <ScrollControls pages={10} damping={0.5}>
         <SheetProvider sheet={sheet}>
-          <Suspense>
+          <Suspense fallback={loader}>
             <Scene setIframeUrl={setIframeUrl} toggle={toggle} /> 
           </Suspense>
         </SheetProvider>
@@ -59,7 +59,6 @@ function Loader() {
       setLoadingProgress(progress);
     }, 0);
 
-    // Clean up the timeout
     return () => clearTimeout(timeoutId);
   }, [progress]);
 
