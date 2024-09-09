@@ -36,7 +36,7 @@ export default function App() {
     <Canvas gl={{ preserveDrawingBuffer: true }}>
       <ScrollControls pages={10} damping={0.5}>
         <SheetProvider sheet={sheet}>
-          <Suspense fallback={loader}>
+          <Suspense fallback={<Loader />}>
             <Scene setIframeUrl={setIframeUrl} toggle={toggle} /> 
           </Suspense>
         </SheetProvider>
